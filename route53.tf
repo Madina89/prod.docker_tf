@@ -1,4 +1,4 @@
-resource "aws_route53_record" "docker" {
+resource "aws_route53_record" "prod.docker" {
   zone_id = "${var.zone_id}"
   name    = "docker.${var.domain}"   
   type    = "A"
